@@ -13,8 +13,19 @@
 #define CHECKSUM_SIZE    1
 #define PACKET_SIZE      (NETWORK_SIG_SIZE + VAL_SIZE + CHECKSUM_SIZE)
 #define NET_ADDR 1 // The network address byte can be 1 through 4
-
 const byte g_network_sig[NETWORK_SIG_SIZE] = {0x8F, 0xAA, NET_ADDR};  // Few bytes used to initiate a transfer
+
+void setup()
+{
+  Serial.begin(1200);  
+  while(!Serial){};
+  Serial.println("ready");
+}
+
+void loop()
+{
+  Serial.println(readUInt(true)); 
+}
 
 // Receives an unsigned int over the RF network
 unsigned int readUInt(bool wait)
