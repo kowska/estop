@@ -1,5 +1,7 @@
 # estop
 
-- all receivers/transmitters need RFDriver.ino (open second tab in Arduino IDE to add)
+- works with multpile receivers 
+- weird Serial issue is fixed
 
-- to work across multiple receivers, change value of NET_ADDR in RFDriver.ino
+<img src="http://www.glacialwanderer.com/_blog/blog2009/08_August/hr_RF_circuit.jpg">
+(http://www.glacialwanderer.com/_blog/blog2009/08_August/hr_RF_circuit.jpg)
